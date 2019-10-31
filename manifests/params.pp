@@ -25,10 +25,7 @@ class influxdb::params {
   $graphite_enable         = false
   $graphite_database       = 'graphite'
   $graphite_listen         = ':2003'
-  $graphite_templates      = [
-    '*.app env.service.resource.measurement',
-    'server.*', # default template
-  ]
+  $graphite_templates      = [ ]
 
   case $::operatingsystem {
     /(?i:debian|devuan|ubuntu)/: {
