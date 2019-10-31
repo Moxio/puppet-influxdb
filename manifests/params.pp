@@ -27,7 +27,7 @@ class influxdb::params {
   $graphite_listen         = ':2003'
   $graphite_templates      = [
     '*.app env.service.resource.measurement',
-    'server', # default template
+    'server.*', # default template
   ]
 
   case $::operatingsystem {
