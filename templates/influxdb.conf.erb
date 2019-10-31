@@ -452,14 +452,14 @@ reporting-disabled = true
 ###
 
 [[collectd]]
-  enabled = <%= @collectd_enable %>
-  bind-address = "<%= @collectd_bind_address %>"
+  # enabled = <%= @collectd_enable %>
+  # bind-address = "<%= @collectd_bind_address %>"
   # database = "collectd"
   # retention-policy = ""
   #
   # The collectd service supports either scanning a directory for multiple types
   # db files, or specifying a single db file.
-  typesdb = "<%= @collectd_typesdb %>"
+  # typesdb = "<%= @collectd_typesdb %>"
   #
   # security-level = "none"
   # auth-file = "/etc/collectd/auth_file"
@@ -523,8 +523,8 @@ reporting-disabled = true
 ###
 
 [[udp]]
-  # enabled = <%= @udp_enable %>
-  # bind-address = <%= @udp_bind_address %>
+  enabled = <%= @udp_enable %>
+  bind-address = <%= @udp_bind_address %>
   # database = "udp"
   # retention-policy = ""
 
